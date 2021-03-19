@@ -35,6 +35,14 @@ namespace ParcialProgra3
                 {
                     Loans = JsonConvert.DeserializeObject<List<Loan>>(sr.ReadToEnd());
                 }
+
+                if (Students == null || Books == null)
+                {
+                    Students = new List<Student>();
+                    Books = new List<Book>();
+                    Loans = new List<Loan>();
+    }
+
             } else
             {
                 using (StreamWriter sr = new StreamWriter(StudentsFile))

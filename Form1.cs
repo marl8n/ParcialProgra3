@@ -22,21 +22,44 @@ namespace ParcialProgra3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = lib.Loans.OrderBy(l => l.ReturnDate);
+            if (lib.Loans != null)
+            {
+                dataGridView1.DataSource = lib.Loans.OrderBy(l => l.ReturnDate).ToList();
+                dataGridView1.Refresh();
+                lbNonReturned.Text = "" + lib.Loans.Where(l => l.ReturnDate < DateTime.Now).ToList().Count();
+            }
         }
 
         private void btnAddLoan_Click(object sender, EventArgs e)
         {
             lib.CreateLoan(
-                new models.Student(
-                    tbIdStudent.Text
-                    ),
-                new models.Book(
-                    tbIdBook.Text
-                    ),
+                lib.Students.Where(s => s.Id == tbIdStudent.Text).First(),
+                lib.Books.Where(b => b.Id == tbIdBook.Text).First(),
                 dtpLoan.Value,
                 dtpReturn.Value
                 );
+            lib.SaveAll();
+        }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            lib.CreateStudent(
+                tbStudentID.Text,
+                tbStudentName.Text,
+                tbStudentAddress.Text
+                );
+            lib.SaveAll();
+        }
+
+        private void btnAddBook_Click(object sender, EventArgs e)
+        {
+            lib.CreateBook(
+                tbBookId.Text,
+                tbBookTitle.Text,
+                tbBookAuthor.Text,
+                dtpPublished.Value
+                );
+            lib.SaveAll();
         }
     }
 }
