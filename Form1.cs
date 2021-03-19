@@ -22,7 +22,7 @@ namespace ParcialProgra3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            dataGridView1.DataSource = lib.Loans.OrderBy(l => l.ReturnDate);
         }
 
         private void btnAddLoan_Click(object sender, EventArgs e)
