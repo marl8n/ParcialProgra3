@@ -25,5 +25,11 @@ namespace ParcialProgra3.models
             this.Author = Author;
             this.YearOfPublication = YearOfPublication;
         }
+
+        public Book(string Id, string Title = "")
+        {
+            this.Id = Id;
+            this.Title = Title;
+        }
     }
 }

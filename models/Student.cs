@@ -17,7 +17,7 @@ namespace ParcialProgra3.models
 
         }
 
-        public Student(string Id, string Name, string Address)
+        public Student(string Id, string Name = "", string Address = "")
         {
             this.Id = Id;
             this.Name = Name;

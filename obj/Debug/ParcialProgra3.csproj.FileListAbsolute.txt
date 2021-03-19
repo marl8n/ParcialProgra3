@@ -1,0 +1,13 @@
+C:\Users\MIDP9\source\repos\ParcialProgra3\bin\Debug\ParcialProgra3.exe.config
+C:\Users\MIDP9\source\repos\ParcialProgra3\bin\Debug\ParcialProgra3.exe
+C:\Users\MIDP9\source\repos\ParcialProgra3\bin\Debug\ParcialProgra3.pdb
+C:\Users\MIDP9\source\repos\ParcialProgra3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MIDP9\source\repos\ParcialProgra3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.csprojAssemblyReference.cache
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.Form1.resources
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.Properties.Resources.resources
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.csproj.GenerateResource.cache
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.csproj.CoreCompileInputs.cache
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.csproj.CopyComplete
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.exe
+C:\Users\MIDP9\source\repos\ParcialProgra3\obj\Debug\ParcialProgra3.pdb
