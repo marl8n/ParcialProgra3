@@ -39,6 +39,11 @@ namespace ParcialProgra3
                 dtpReturn.Value
                 );
             lib.SaveAll();
+            tbIdStudent.Text = "";
+            tbIdBook.Text = "";
+            dataGridView1.DataSource = lib.Loans.OrderBy(l => l.ReturnDate).ToList();
+            dataGridView1.Refresh();
+            lbNonReturned.Text = "" + lib.Loans.Where(l => l.ReturnDate < DateTime.Now).ToList().Count();
         }
 
         private void btnAddStudent_Click(object sender, EventArgs e)
@@ -49,6 +54,9 @@ namespace ParcialProgra3
                 tbStudentAddress.Text
                 );
             lib.SaveAll();
+            tbStudentID.Text = "";
+            tbStudentName.Text = "";
+            tbStudentAddress.Text = "";
         }
 
         private void btnAddBook_Click(object sender, EventArgs e)
@@ -59,6 +67,10 @@ namespace ParcialProgra3
                 tbBookAuthor.Text,
                 dtpPublished.Value
                 );
+            tbBookAuthor.Text = "";
+            tbBookTitle.Text = "";
+            tbBookId.Text = "";
+            dtpPublished.Value = DateTime.Now;
             lib.SaveAll();
         }
     }
